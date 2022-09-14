@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desventajas</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <table width="100%">
+        <tr><!--banner-->
+            <td>
+                <div id="container">
+                    <img src="img/FTP.jpg" alt="error" width="100%" height="500px">
+                </div>
+            </td>
+        </tr>
+        <tr><!--Menu-->
+            <td rowspan="3" width="20%">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="Index.html">Inicio</a></li>
+                        <li class="barra">|</li>
+                        <li><a  href="servidor.html">Servidor FTP</a></li>
+                        <li class="barra">|</li>
+                        <li><a href="funcionamiento.html">Funcionamiento</a></li>
+                        <li class="barra">|</li>
+                        <li><a href="problemas.html">Problemas</a></li>
+                        <li class="barra">|</li>
+                        <li><a>Desventajas</a></li>
+                        <li class="barra">|</li>
+                        <li><a href="visual.html">Visual</a></li>
+                        <li class="barra">|</li>
+                    </ul>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <div class="wrapper">
+        <header>
+            <img src="img/fondo.jpg" class="background">
+            <img src="img/pc.png" class="foreground">
+            <h1 class="title">Desventajas</h1>
+        </header>
+        <section>
+            Hay una desventaja significativa asociada al FTP y es la falta de seguridad. Dado
+            que el FTP se inventó en los años setenta, es anterior a muchas de las medidas
+            de ciberseguridad en las que hemos llegado a confiar en el mundo moderno. No
+            fue diseñado para ser un protocolo seguro. <br>
+            Las transferencias del FTP no están cifradas, lo que significa que tus contraseñas, 
+            nombres de usuario y otros datos confidenciales pueden ser leídos con relativa facilidad
+            por los piratas informáticos que capturen tus paquetes de datos (es decir, mediante 
+            un ataque de captura de paquetes). <br>
+            Debido a estos agujeros de seguridad, el soporte de del FTP viene disminuyendo. Han 
+            llegado al mercado una variedad de diferentes opciones de reemplazo, como SFTP, HTTPS, 
+            AS2 y FTPS. A partir de 2020, Google Chrome desactivó el FTP de forma predeterminada y 
+            Firefox lo eliminó de su código.
+        </section>
+    </div>
+    <section id="pantalla-dividida">
+        <div class="izquierda">
+            <h1><span class="creative">SFTP</span></h1>
+            <p>El SFTP (también conocido como protocolo de transferencia de archivos SSH) es un
+                protocolo independiente que funciona sobre el flujo de datos de Secure Shell (SSH)
+                para proporcionar un nivel más alto de protección al transferir archivos. A diferencia
+                de los clientes del FTP, que usan el puerto 21, el SFTP utiliza el puerto 22. Debido a
+                que el FTP es un protocolo poco seguro, se suele preferir el SFTP, puesto que
+                proporciona características de seguridad subyacentes y ofrece la posibilidad de
+                conectarse a una conexión SSH.
+            </p>
+        </div>
+        <div class="derecha4"></div>
+    </section>
+</body>
+</html>

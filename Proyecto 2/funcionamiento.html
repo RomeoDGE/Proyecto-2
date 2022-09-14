@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionamiento</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <table width="100%">
+        <tr><!--banner-->
+            <td>
+                <div id="container">
+                    <img src="img/FTP.jpg" alt="error" width="100%" height="500px">
+                </div>
+            </td>
+        </tr>
+        <tr><!--Menu-->
+            <td rowspan="3" width="20%">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="Index.html">Inicio</a></li>
+                        <li class="barra">|</li>
+                        <li><a href="servidor.html">Servidor FTP</a></li>
+                        <li class="barra">|</li>
+                        <li><a>Funcionamiento</a></li>
+                        <li class="barra">|</li>
+                        <li><a href="problemas.html">Problemas</a></li>
+                        <li class="barra">|</li>
+                        <li><a href="desventajas.html">Desventajas</a></li>
+                        <li class="barra">|</li>
+                        <li><a href="visual.html">Visual</a></li>
+                        <li class="barra">|</li>
+                    </ul>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <section id="pantalla-dividida">
+        <div class="izquierda3">
+            <h1><span class="creative">Funcionamiento</span></h1>
+            <p>El FTP es un protocolo cliente-servidor. En otras palabras, el cliente solicita los
+                archivos y el servidor los proporciona. Como tal, un FTP requiere dos 
+                canales básicos para establecer una conexión:
+            </p>
+        </div>
+        <div class="derecha6"></div>
+    </section>
+    <table width="100%">
+        <tr>
+            <td>
+                <div class="contenedor">
+                    <figure>
+                        <img src="img/mandos.jpg">
+                        <div class="capa">
+                            <h3>Canal de mando</h3>
+                            <p>
+                                Inicia la instrucción, lleva la información básica, es decir, los archivos a los 
+                                que hay que acceder.
+                            </p>
+                        </div>
+                    </figure>
+                </div>
+            </td>
+            <td>
+                <div class="contenedor">
+                    <figure>
+                        <img src="img/datos.jpg">
+                        <div class="capa">
+                            <h3>Canal de datos</h3>
+                            <p>
+                                Transfiere los datos de los archivos entre los dos dispositivos.
+                            </p>
+                        </div>
+                    </figure>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <p>En pocas palabras, “puertos” son números que se utilizan para identificar
+                        transacciones de información en una red. También es importante señalar que
+                        existen dos modos de conexión del FTP distintos: <b>activo y pasivo.</b><br>
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <section id="pantalla-dividida">
+        <div class="izquierda4">
+            <h1><span class="creative">Activo</span></h1>
+            <p>En el modo activo del FTP, el servidor asume un rol activo aprobando una
+                solicitud de datos. No obstante, este modo a veces puede tener problemas
+                con los firewalls, que bloquean las sesiones no autorizadas de terceros.
+                Es entonces cuando entra en juego el modo pasivo.
+            </p>
+        </div>
+        <div class="derecha7">
+            <h1><span class="creative">Pasivo</span></h1>
+            <p>En el modo pasivo, el servidor no mantiene activamente la conexión, lo que
+                significa que el usuario establece tanto el canal de datos como el canal de
+                mando. En esencia, el servidor “escucha”, pero no participa activamente, lo
+                que permite que el otro dispositivo maneje la mayor parte del trabajo.
+            </p>
+        </div>
+    </section>
+</body>
+</html>
